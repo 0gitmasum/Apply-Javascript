@@ -7,9 +7,6 @@
 // returning a value;
 
 
-
-
-/**
 // Salam function
 function greeting() {
     console.log('Assalamualikum Orahmatullahi Oyabarakatuh.');
@@ -36,7 +33,7 @@ var morning = "roof";
 readingBook();
 
 //Playing cricket
-function play(){
+function play() {
     console.log('Playing Cricket');
     console.log('& Waste your own time');
 }
@@ -44,9 +41,8 @@ play();
 var afternoon = 'campus field';
 var kadoirField = 'cricket';
 play();
-*/
 
-/**
+
 //Parameter function
 function doubleIt(num) {
     var result = num * 2;
@@ -80,9 +76,8 @@ function name(fruit, flower) {
 }
 var priceDifference = name(99, 70);
 console.log(priceDifference);
-*/
 
-/**
+
 //Inch to Feet convert;
 function inchToFeet(inch) {
     var feet = inch / 12;
@@ -108,9 +103,9 @@ var tazbir = feetToInch(5.2);
 console.log('masum-', masum);
 console.log('nazmul vai-', nazmul);
 console.log('tazbir vai-', tazbir);
-*/
 
-/** 
+
+
 //Leap year function;
 function leapYear(year) {
     const remainder = year % 4;
@@ -123,9 +118,9 @@ function leapYear(year) {
 }
 let checkLeap = leapYear(2024);
 console.log(checkLeap);
-*/
 
-/** //Factorial Numbers fucntion;
+
+//Factorial Numbers fucntion;
 function factorial(n) {
     var factorial = 1;
     for (var i = 1; i <= n; i++) {
@@ -134,22 +129,20 @@ function factorial(n) {
     return factorial;
 }
 var result = factorial(5);
-console.log(result); 
-*/
+console.log(result);
 
-/**
 //Fibonacci series number convert to js pogrammming (function, loop);
-first two number of fibonacci, fibo = [0, 1]
-fibo[2] = fibo[2 - 1] + fibo[2 - 2]
-fibo[3] = fibo[3 - 1] + fibo[3 - 2]
-fibo[4] = fibo[4 - 1] + fibo[4 - 2]
-fibo[5] = fibo[5 - 1] + fibo[5 - 2]
-fibo[n] = fibo[n - 1] + fibo[n - 2]
-*/
+// first two number of fibonacci, fibo = [0, 1]
+// fibo[2] = fibo[2 - 1] + fibo[2 - 2]
+// fibo[3] = fibo[3 - 1] + fibo[3 - 2]
+// fibo[4] = fibo[4 - 1] + fibo[4 - 2]
+// fibo[5] = fibo[5 - 1] + fibo[5 - 2]
+// fibo[n] = fibo[n - 1] + fibo[n - 2]
 
-/**
+
+
 //Fibonacci in (for loop with function);
-function fibonacci(n){
+function fibonacci(n) {
     var fibo = [0, 1];
     for (var i = 2; i <= n; i++) {
         fibo[i] = fibo[i - 1] + fibo[i - 2];
@@ -172,7 +165,6 @@ function fibonacci(n) {
 }
 var result = fibonacci(12);
 console.log(result);
-*/
 
 //Recursive area start
 //Recursive function factorial numbers;
@@ -188,7 +180,7 @@ console.log(result);
 //9 = (8-1)!9
 //10 = (9-1)!10
 //n = n*(n-1)!
-/**
+
 function factorialRecursive(n) {
     if (n == 0) {
         return 1;
@@ -210,9 +202,8 @@ function seriesFibonacci(n) {
 }
 var resultFibo = seriesFibonacci(12);
 console.log(resultFibo);
-*/
 
-/**
+
 //Check Prime number;
 function primeNumber(n) {
     for (i = 2; i < n; i++) {
@@ -224,9 +215,8 @@ function primeNumber(n) {
 }
 var checkResult = primeNumber(23);
 console.log(checkResult);
-*/
 
-/**
+
 //Function for total value of fibonacci series with for-loop;
 function arraySum(values) {
     var sumFibo = 0;
@@ -256,8 +246,7 @@ function arraySumWhile(values2) {
 var values2 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 var totalValue = arraySumWhile(values2);
 console.log("total is = ", totalValue);
-*/
-/** 
+
 //remove duplicate number in a function;
 var variousNums = [5, 2, 5, 6, 3, 8, 7, 1, 9, 8];
 var notDuplicateNumber = [];
@@ -273,9 +262,7 @@ function removeDuplicate(variousNums) {
 }
 notDuplicateNumber = removeDuplicate(variousNums);
 console.log(notDuplicateNumber);
-*/
 
-/**
 //Reverse pogram start;
 function reverseString(str) {
     var reverse = "";
@@ -290,9 +277,7 @@ var forAlien = reverseString(statement);
 console.log(forAlien);
 var myName = reverseString("manner");
 console.log(myName);
-*/
 
-/** 
 //another pogram;
 var elements = [52, 36, 89, 47, 56, 25, 63, 45,];
 for (var i = 0; i < elements.length; i++) {
@@ -308,22 +293,22 @@ function add(number1, number2) {
 var totalNumber = add(65, 10);
 console.log(totalNumber);
 console.log('not adding this time', totalNumber);
-*/
 
-//Identify even & odd number pogram;
-// function evenify(num) {
-//     let output1;
-//     if (num % 2 == 0) {
-//         output1 = num;
-//     }
-//     else {
-//         output1 = num * 2;
-//     }
-//     return output1;
-// }
-// let output1 = evenify(13);
-// let square = output1 * output1;
-// console.log(square, '= square');
+
+// Identify even & odd number pogram;
+function evenify(num) {
+    let output1;
+    if (num % 2 == 0) {
+        output1 = num;
+    }
+    else {
+        output1 = num * 2;
+    }
+    return output1;
+}
+let output1 = evenify(13);
+let square = output1 * output1;
+console.log(square, '= square');
 
 
 //Inch to Feet convert;
@@ -389,8 +374,8 @@ function evenify(num) {
     return result;
 }
 var result = evenify(6);
-var square = result * result;
-console.log('square = ', square);
+var square2 = result * result;
+console.log('square = ', square2);
 
 //another even & odd number pogram
 function evenify_all(nums) {
